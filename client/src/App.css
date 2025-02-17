@@ -1,0 +1,146 @@
+﻿/* App.css */
+
+
+
+/* App styl */
+.App {
+    width: 100%;
+    max-width: 1000px; /* Maksymalna szerokość aplikacji */
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #f7f9fc; /* Kolor tła całej strony */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+}
+/* Nagłówek */
+h1 {
+    font-size: 2.5rem;
+    color: #2a3b4c;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2a3b4c;
+    margin-bottom: 20px;
+}
+
+/* Formularze */
+form {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+/* Pola tekstowe */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus {
+        border-color: #4e84f5;
+        outline: none;
+        box-shadow: 0 0 5px rgba(78, 132, 245, 0.3);
+    }
+
+/* Przycisk */
+button {
+    background-color: #4e84f5;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+    button:hover {
+        background-color: #3c6bcf;
+        transform: scale(1.05);
+    }
+
+    button:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(78, 132, 245, 0.5);
+    }
+
+/* Sekcja z formularzami logowania i rejestracji */
+h2 {
+    margin-top: 30px;
+}
+
+/* Przycisk wylogowania */
+button.logout {
+    background-color: #f4516c;
+    margin-top: 30px;
+}
+
+    button.logout:hover {
+        background-color: #e4405f;
+    }
+
+/* Sekcja dla komponentów po zalogowaniu */
+div > form {
+    margin-top: 30px;
+}
+
+/* Wyrównanie kontentu */
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wyrównanie tekstu wewnątrz formularzy */
+form input,
+form button {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+    /* Przycisk logowania i rejestracji */
+    form input[type="submit"] {
+        background-color: #2a3b4c;
+        border-radius: 10px;
+        padding: 15px;
+        width: 100%;
+        color: white;
+        cursor: pointer;
+        border: none;
+    }
+
+        form input[type="submit"]:hover {
+            background-color: #1d2b3a;
+            transition: background-color 0.3s ease;
+        }
